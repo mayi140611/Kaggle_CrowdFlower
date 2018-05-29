@@ -177,6 +177,9 @@ replace_dict = {
 }
 
 def clean_text(line, drop_html_flag=False):
+    '''
+    去除html标签、替换错词和同义词
+    '''
     names = ["query", "product_title", "product_description"]
     for name in names:
         l = line[name]
